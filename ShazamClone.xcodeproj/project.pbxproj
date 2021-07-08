@@ -3,14 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514A626B26978E3B008ABBDF /* RippleView in Frameworks */ = {isa = PBXBuildFile; productRef = 514A626A26978E3B008ABBDF /* RippleView */; };
 		51B7BFFB2690CFB200DA2E87 /* ShazamCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BFFA2690CFB200DA2E87 /* ShazamCloneApp.swift */; };
 		51B7BFFD2690CFB200DA2E87 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B7BFFC2690CFB200DA2E87 /* ContentView.swift */; };
 		51B7BFFF2690CFB200DA2E87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B7BFFE2690CFB200DA2E87 /* Assets.xcassets */; };
 		51B7C0022690CFB200DA2E87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B7C0012690CFB200DA2E87 /* Preview Assets.xcassets */; };
+		51B7C00F2690DA2700DA2E87 /* NoResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B7C00E2690DA2700DA2E87 /* NoResultView.swift */; };
+		51B7C0122690F0F000DA2E87 /* ShazamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B7C0112690F0F000DA2E87 /* ShazamView.swift */; };
+		51B7C01B2690F16500DA2E87 /* ShazamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B7C01A2690F16500DA2E87 /* ShazamViewModel.swift */; };
+		51D043192690FB3500B2DA1F /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D043182690FB3500B2DA1F /* Song.swift */; };
+		51D04321269109DE00B2DA1F /* SongDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D04320269109DE00B2DA1F /* SongDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,11 @@
 		51B7BFFE2690CFB200DA2E87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B7C0012690CFB200DA2E87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51B7C0032690CFB200DA2E87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51B7C00E2690DA2700DA2E87 /* NoResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoResultView.swift; sourceTree = "<group>"; };
+		51B7C0112690F0F000DA2E87 /* ShazamView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamView.swift; sourceTree = "<group>"; };
+		51B7C01A2690F16500DA2E87 /* ShazamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShazamViewModel.swift; sourceTree = "<group>"; };
+		51D043182690FB3500B2DA1F /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		51D04320269109DE00B2DA1F /* SongDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,12 +38,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514A626B26978E3B008ABBDF /* RippleView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5192A6CA2693C26300809316 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				51B7C0182690F13A00DA2E87 /* NoResult */,
+				51B7C0142690F12200DA2E87 /* Shazam */,
+				51D0432326910D5300B2DA1F /* SongDetail */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		5192A6CB2693C26D00809316 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				51D043172690FB2600B2DA1F /* Model */,
+				5192A6CC2693C27E00809316 /* Shazam */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		5192A6CC2693C27E00809316 /* Shazam */ = {
+			isa = PBXGroup;
+			children = (
+				51B7C01A2690F16500DA2E87 /* ShazamViewModel.swift */,
+			);
+			path = Shazam;
+			sourceTree = "<group>";
+		};
 		51B7BFEE2690CFB200DA2E87 = {
 			isa = PBXGroup;
 			children = (
@@ -57,6 +96,8 @@
 				51B7BFFE2690CFB200DA2E87 /* Assets.xcassets */,
 				51B7C0032690CFB200DA2E87 /* Info.plist */,
 				51B7C0002690CFB200DA2E87 /* Preview Content */,
+				5192A6CB2693C26D00809316 /* Presentation */,
+				5192A6CA2693C26300809316 /* UI */,
 			);
 			path = ShazamClone;
 			sourceTree = "<group>";
@@ -67,6 +108,38 @@
 				51B7C0012690CFB200DA2E87 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51B7C0142690F12200DA2E87 /* Shazam */ = {
+			isa = PBXGroup;
+			children = (
+				51B7C0112690F0F000DA2E87 /* ShazamView.swift */,
+			);
+			path = Shazam;
+			sourceTree = "<group>";
+		};
+		51B7C0182690F13A00DA2E87 /* NoResult */ = {
+			isa = PBXGroup;
+			children = (
+				51B7C00E2690DA2700DA2E87 /* NoResultView.swift */,
+			);
+			path = NoResult;
+			sourceTree = "<group>";
+		};
+		51D043172690FB2600B2DA1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				51D043182690FB3500B2DA1F /* Song.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		51D0432326910D5300B2DA1F /* SongDetail */ = {
+			isa = PBXGroup;
+			children = (
+				51D04320269109DE00B2DA1F /* SongDetailView.swift */,
+			);
+			path = SongDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +158,9 @@
 			dependencies = (
 			);
 			name = ShazamClone;
+			packageProductDependencies = (
+				514A626A26978E3B008ABBDF /* RippleView */,
+			);
 			productName = ShazamClone;
 			productReference = 51B7BFF72690CFB200DA2E87 /* ShazamClone.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +188,9 @@
 				Base,
 			);
 			mainGroup = 51B7BFEE2690CFB200DA2E87;
+			packageReferences = (
+				514A626926978E3B008ABBDF /* XCRemoteSwiftPackageReference "RippleView" */,
+			);
 			productRefGroup = 51B7BFF82690CFB200DA2E87 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,7 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51D043192690FB3500B2DA1F /* Song.swift in Sources */,
+				51B7C0122690F0F000DA2E87 /* ShazamView.swift in Sources */,
+				51B7C00F2690DA2700DA2E87 /* NoResultView.swift in Sources */,
+				51D04321269109DE00B2DA1F /* SongDetailView.swift in Sources */,
 				51B7BFFD2690CFB200DA2E87 /* ContentView.swift in Sources */,
+				51B7C01B2690F16500DA2E87 /* ShazamViewModel.swift in Sources */,
 				51B7BFFB2690CFB200DA2E87 /* ShazamCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -197,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -252,7 +336,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,7 +356,7 @@
 				DEVELOPMENT_TEAM = UXB3TMTR3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ShazamClone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +378,7 @@
 				DEVELOPMENT_TEAM = UXB3TMTR3F;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ShazamClone/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +412,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		514A626926978E3B008ABBDF /* XCRemoteSwiftPackageReference "RippleView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/emmanuelkehinde/RippleView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		514A626A26978E3B008ABBDF /* RippleView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 514A626926978E3B008ABBDF /* XCRemoteSwiftPackageReference "RippleView" */;
+			productName = RippleView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 51B7BFEF2690CFB200DA2E87 /* Project object */;
 }
