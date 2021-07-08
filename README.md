@@ -5,7 +5,7 @@ A simple Shazam clone using ShazamKit, built with SwiftUI.
 <tr>
 <td>
 
-<img src=https://raw.githubusercontent.com/emmanuelkehinde/ShazamClone/main/Screenshots/ShazamClone.gif width=350 align="center" />
+<img src=https://raw.githubusercontent.com/emmanuelkehinde/ShazamClone/main/Screenshots/ShazamClone.gif width=300 align="center" />
 
 </td>
 </tr>
