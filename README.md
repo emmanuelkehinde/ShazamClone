@@ -1,6 +1,16 @@
 # ShazamClone
 A simple Shazam clone using ShazamKit, built with SwiftUI.
 
+<table>
+<tr>
+<td>
+
+<img src=https://raw.githubusercontent.com/emmanuelkehinde/ShazamClone/main/Screenshots/ShazamClone.gif width=350 align="center" />
+
+</td>
+</tr>
+</table>
+
 ### Requirements
 - iOS 15
 - Xcode 13
