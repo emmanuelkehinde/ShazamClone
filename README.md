@@ -21,4 +21,4 @@ A simple Shazam clone using ShazamKit, built with SwiftUI.
 - [SwiftUI](https://developer.apple.com/xcode/swiftui/): UI Toolkit for building user interfaces in a declarative way.
 
 ### Blog Post
-https://emmanuelkehinde.io/how-to-control-the-display-order-of-overlapping-views-in-swiftui/
+https://emmanuelkehinde.io/swiftui-building-a-simple-shazam-clone-using-shazamkit/
