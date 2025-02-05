@@ -49,8 +49,9 @@ struct ShazamView: View {
 
                     if foundSong != nil {
                         VStack {
-                            SongDetailView(song: foundSong)
-                                .animation(.easeInOut)
+                            withAnimation(.easeInOut) {
+                                SongDetailView(song: foundSong)
+                            }
                             Spacer()
                             recordButton
                         }

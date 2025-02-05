@@ -39,7 +39,7 @@ struct SongDetailView: View {
 
                         ScrollView(.horizontal, showsIndicators: false, content: {
                             HStack {
-                                ForEach(0..<song.genres.count) { index in
+                                ForEach(0..<song.genres.count, id: \.self) { index in
                                     Text(song.genres[index])
                                         .font(.caption)
                                         .padding(4)
